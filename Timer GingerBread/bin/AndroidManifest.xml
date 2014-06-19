@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ramkumar.timer"
+    android:versionCode="1"
+    android:versionName="1.2" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="10" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ramkumar.timer.Startpage"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+########################################################################################################################
+         <activity 
+            android:exported="true"
+            android:name="com.ramkumar.timer.Starttimer"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.ramkumar.timer.STARTTIMER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+########################################################################################################################
+         <activity 
+            android:exported="true"
+            android:name="com.ramkumar.timer.PlayAlarm"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.ramkumar.timer.PLAYALARM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         
+     </application>
+
+</manifest>
